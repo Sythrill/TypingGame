@@ -1,21 +1,15 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   width: 1200px;
   height: 100vh;
   text-align: center;
-  font-family: 'VT323', monospace;
-  font: bold 20px;
-  background: #F4DECB;
-}
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  background: #F4DECB; }
 
 .game_title > h1 {
   font-size: 70px;
-  color: #49274A;
-}
+  color: #49274A; }
 
 .game_container {
   width: 90%;
@@ -24,50 +18,42 @@ body {
   margin: 50px auto;
   background: #F8EEE7;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px #49274A;
-}
+  box-shadow: 1px 1px 5px #49274A; }
 
 .game_menu {
   height: 150px;
   margin: 10px auto;
-  position: relative;
-}
+  position: relative; }
 
 .bubble {
   position: absolute;
   width: 50px;
   height: 50px;
   line-height: 50px;
-  background-color:#FFE658;
+  background-color: #FFE658;
   text-align: center;
-  border-radius: 50%;
-} 
+  border-radius: 50px; }
+  .bubble > h4 {
+    text-align: center;
+    font-size: 30px;
+    color: #404040; }
 
-.bubble > h4 {
-  text-align: center;
-  font-size: 30px;
-  color: #404040;
-}
-
-.game_lives {
+.game_lifes {
   display: inline-block;
   background: #E44424;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   padding: 5px;
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 #lifes {
   position: absolute;
   bottom: 0;
-  right: 0;
-}
+  right: 0; }
 
 #score {
-  margin-left: 5px;
-}
+  margin-left: 5px; }
 
 #game_score {
   display: inline-block;
@@ -76,15 +62,19 @@ body {
   left: 33vw;
   font-size: 30px;
   color: #49274A;
-  margin: 60px auto;
-}
+  margin: 60px auto; }
 
 #start_button {
   display: inline-block;
   position: absolute;
   left: 200px;
-  bottom: 0;
-}
+  bottom: 0; }
+
+#info_button {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 0; }
 
 #start,
 #info {
@@ -93,12 +83,6 @@ body {
   background: #94618E;
   text-align: center;
   font-size: 23px;
-  padding: 5px;
-}
+  padding: 5px; }
 
-#info_button {
-  display: inline-block;
-  position: absolute;
-  left: 10px;
-  bottom: 0;
-}
+/*# sourceMappingURL=style.css.map */

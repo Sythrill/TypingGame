@@ -1,6 +1,7 @@
 var time;
 var number;
 var points = 0;
+var delay = 3000;
 
 $(document).ready(function () {
     $('#start').click(function () {
@@ -8,6 +9,15 @@ $(document).ready(function () {
     });
 });
 
+function changeTime() {
+    if (delay > 500) {
+        delay -= 500;
+    } else {
+        delay === 500;
+    }
+};
+
+setInterval(changeTime, 60000);
 
 function generateLetter() {
     var number = Math.floor(Math.random() * (90 - 65 + 1)) + 65;
@@ -20,7 +30,8 @@ function generateLetter() {
         addPoints(number);
         takeLife(number);
     });
-    time = setTimeout(generateLetter, 1500);
+
+    time = setTimeout(generateLetter, delay);
 };
 
 function addPoints(number) {
@@ -42,8 +53,8 @@ function takeLife(number) {
         if (keycode !== number) {
             $('.bubble' + number).css('background','#E44424').hide('slow', function () {
                 $(this).remove();
-                $('#lifes > .game_lives:first').hide('slow', function () {
-                    var elements = $('#lifes > .game_lives').length;
+                $('#lifes > .game_lifes:first').hide('slow', function () {
+                    var elements = $('#lifes > .game_lifes').length;
                     elements--;
                     $(this).remove();
                     gameOver(elements);

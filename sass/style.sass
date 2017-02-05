@@ -1,0 +1,98 @@
+$background_color: #F4DECB
+$game_container_color: #F8EEE7
+$shadow_color: #49274A
+$font_color: #49274A
+$bubble_color: #FFE658
+$bubble_font_color: #404040
+$life_background_color: #E44424;
+$button_color: #94618E
+$font: 'VT323', monospace
+
+.container
+	width: 1200px
+	height: 100vh
+	text-align: center
+	font-family: $font
+	font-size: 20px
+	font-weight: bold
+	background: $background_color
+
+.game_title 
+	> h1
+		font-size: 70px
+		color: $font_color
+
+.game_container
+	width: 90%
+	height: 50%
+	position: relative
+	margin: 50px auto
+	background: $game_container_color
+	border-radius: 10px
+	box-shadow: 1px 1px 5px $shadow_color
+
+.game_menu
+	height: 150px
+	margin: 10px auto
+	position: relative
+
+.bubble
+	position: absolute
+	width: 50px
+	height: 50px
+	line-height: 50px
+	background-color: $bubble_color
+	text-align: center
+	border-radius: 50px
+	> h4
+		text-align: center
+		font-size: 30px
+		color: $bubble_font_color
+
+.game_lifes
+	display: inline-block
+	background: $life_background_color
+	border-radius: 50%
+	width: 50px
+	height: 50px
+	padding: 5px
+	font-size: 30px
+
+#lifes
+	position: absolute
+	bottom: 0
+	right: 0
+
+#score
+	margin-left: 5px
+
+#game_score
+	display: inline-block
+	position: absolute
+	bottom: 4vh
+	left: 33vw
+	font-size: 30px
+	color: $font_color
+	margin: 60px auto
+
+#start_button
+	display: inline-block
+	position: absolute
+	left: 200px
+	bottom: 0
+
+#info_button
+	display: inline-block
+	position: absolute
+	left: 10px
+	bottom: 0
+
+#start,
+#info
+	width: 150px
+	height: 40px
+	background: $button_color
+	text-align: center
+	font-size: 23px
+	padding: 5px
+
