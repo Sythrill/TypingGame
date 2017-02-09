@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Super typing game
+	</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="game_title">
+			<h1>Super typing game</h1>
+		</div>
+		<div class="game_menu">
+			<div id="info_button">
+				<button id="info" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Game Info</button>
+			</div>
+			<div id="start_button">
+				<button id="start" type="button" class="btn btn-info btn-lg">Satart Game</button>
+			</div>
+			<div id="game_score"><span>Score:</span><span id="score">0</span></div>
+			<div id="lifes">
+				<div class="game_lifes">L</div>
+				<div class="game_lifes">I</div>
+				<div class="game_lifes">F</div>
+				<div class="game_lifes">E</div>
+				<div class="game_lifes">S</div>
+			</div>
+		</div>
+		<div class="game_container">
+		</div>
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">How to play.</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							You will see bubbles with random letters in a game window. To get points click equal key on your keyboard until bubble is shown.
+							If you click wrong key you lose one life. You have 5 lifes. The game is over when you lose all of your lifes. 
+							Pay attention! The time speeds up every minute.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>
