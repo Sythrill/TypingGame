@@ -7,8 +7,9 @@
 	</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -54,6 +55,27 @@
 				</div>
 			</div>
 		</div>
+		<div id="carousel">
+			<div id="left_arrow"><button>left</button></div>
+			<div id="right_arrow"><button>right</button></div>
+			<ul id="img_list">
+				<li><img src="img\arceane.jpg" class="item active" data-slide-number="0" id="img-num-0"></li>
+				<li><img src="img\golf.jpg" class="item" data-slide-number="1" id="img-num-1"></li>
+				<li><img src="img\main.png" class="item"  data-slide-number="2" id="img-num-2"></li>
+				<li><img src="img\mario.jpg" class="item" data-slide-number="3" id="img-num-3"></li>
+				<li><img src="img\pocemon.jpg" class="item" data-slide-number="4" id="img-num-4"></li>
+			</ul>
+		</div>
+		<div id="carousel_buttons_container">
+				<ul id="btn_list">
+					<li class="carousel_buttons selected" id="carousel-selector-0" data-button-number="0"></li>
+					<li class="carousel_buttons" id="carousel-selector-1" data-button-number="1"></li>
+					<li class="carousel_buttons" id="carousel-selector-2" data-button-number="2"></li>
+					<li class="carousel_buttons" id="carousel-selector-3" data-button-number="3"></li>
+					<li class="carousel_buttons" id="carousel-selector-4" data-button-number="4"></li>
+				</ul>
+			</div>
+	</div>
 		<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
